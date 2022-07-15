@@ -1,5 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact_sec {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 60vh;
+}
+form {
+  display: flex;
+  gap: 2rem;
+  
+  flex-direction: column;
+}
+.name_field,
+.email_field,
+.phone_field,
+.message_field,
+input {
+  padding: 10px 15px;
+  border-radius: 7px;
+  outline: none;
+  border: 2px solid transparent;
+  font-size: 1.5rem;
+}
+/* form div:hover {
+  box-shadow: 0px 2px 5px black;
+} */
+form div input:focus {
+  border-bottom: 2px solid black;
+}
+form div label {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
+}
+#submit_btn {
+  padding: 10px 15px;
+  width: 8vw;
+  margin-left: 4rem;
 }
