@@ -30,8 +30,9 @@ app.post('/contact',async(req,res)=>{
     // res.send(req.body) //to get the data
     const userData = new User(res.body)
     await userData.save()
+    res.status(201).render('index') //to get back to home page
   } catch (error) {
-    res.status(500).send(error)
+    res.status(500).send(error) 
   }
 })
 // const userRouter = require("./routes/router");
