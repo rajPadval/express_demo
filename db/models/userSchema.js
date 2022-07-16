@@ -24,7 +24,11 @@ const userSchema = mongoose.Schema({
     message:{
         type:String,
         minLength:3
-    }
+    },
+    date:{
+        type:Date,
+        default:Date.now
+    },
 })
 
 //we need a collection

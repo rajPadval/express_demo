@@ -28,8 +28,9 @@ app.get('/contact',(req,res)=>{
 app.post('/contact',async(req,res)=>{
   try {
     // res.send(req.body) //to get the data
-    const userData = new User(res.body)
-    await userData.save()
+    const userData = new User(req.body)
+    await userData.save();
+    console.log(req.body);
     res.status(201).render('index') //to get back to home page
   } catch (error) {
     res.status(500).send(error) 
