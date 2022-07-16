@@ -30,7 +30,7 @@ app.post('/contact',async(req,res)=>{
     // res.send(req.body) //to get the data
     const userData = new User(req.body)
     await userData.save();
-    console.log(req.body);
+    // console.log(req.body); //to check the data in console
     res.status(201).render('index') //to get back to home page
   } catch (error) {
     res.status(500).send(error) 

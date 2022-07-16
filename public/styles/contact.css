@@ -4,42 +4,73 @@
   box-sizing: border-box;
 }
 .contact_sec {
+  margin-top: 2rem;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  height: 60vh;
+  height: auto;
 }
 form {
   display: flex;
-  gap: 2rem;
-  
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 1rem;
+  background-color: rgba(128, 128, 128, 0.137);
 }
+form:hover{
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 20px rgba(0, 255, 0, 0.404);
+  transition: 0.3s ease-in-out;
+  background-color: rgba(128, 128, 128, 0.068);
+  border-radius: 10px;
+}
+
+form div,
+div label,
+div input {
+  background-color: transparent;
+}
+
 .name_field,
 .email_field,
 .phone_field,
 .message_field,
 input {
-  padding: 10px 15px;
+  padding: 10px 5px;
   border-radius: 7px;
   outline: none;
   border: 2px solid transparent;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(0, 255, 0);
 }
 /* form div:hover {
   box-shadow: 0px 2px 5px black;
 } */
 form div input:focus {
-  border-bottom: 2px solid black;
+  border-radius: 0px;
+  border-bottom: 2px solid rgb(0, 255, 0);
+  transition: 0.3s ease-in-out;
 }
 form div label {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #submit_btn {
   padding: 10px 15px;
   width: 8vw;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
+  margin-bottom: 20px;
+  border: 2px solid rgb(0, 255, 0);
+  border-radius: 7px;
+  background-color: transparent;
+}
+#submit_btn:hover {
+  color: rgba(0,255,0);
 }

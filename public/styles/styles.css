@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: black;
+    color: white;
 }
+
     
 section nav {
     display: flex;
@@ -19,7 +22,7 @@ section nav {
     list-style: none;
 }
 .nav_menu li a {
-    color: black;
+    color: linear-gradient();
     text-decoration: none;
     font-size: 2rem;
 }
