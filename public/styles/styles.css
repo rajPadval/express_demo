@@ -26,6 +26,10 @@ section nav {
     text-decoration: none;
     font-size: 2rem;
 }
+.nav_menu li a:hover{
+    border-bottom: 2px solid rgba(0,255,0);
+    transition: 0.2s ease-in;
+}
 .logo {
     width: 20%;
     text-align: center;
